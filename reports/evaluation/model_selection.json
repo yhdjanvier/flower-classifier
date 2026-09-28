@@ -1,0 +1,53 @@
+{
+  "run_name": "final",
+  "chosen": "phase2",
+  "fine_tune": true,
+  "val_phase1": {
+    "loss": 0.3666236102581024,
+    "accuracy": 0.87151700258255,
+    "macro_f1": 0.868835905459318
+  },
+  "val_phase2": {
+    "loss": 0.3128693401813507,
+    "accuracy": 0.9040247797966003,
+    "macro_f1": 0.9021228093176659
+  },
+  "val_final": {
+    "loss": 0.3128693401813507,
+    "accuracy": 0.9040247797966003,
+    "macro_f1": 0.9021228093176659
+  },
+  "config": {
+    "seed": 42,
+    "img_height": 224,
+    "img_width": 224,
+    "batch_size": 32,
+    "val_fraction": 0.15,
+    "test_fraction": 0.15,
+    "rotation_factor": 0.05,
+    "zoom_factor": 0.15,
+    "translation_factor": 0.1,
+    "brightness_factor": 0.15,
+    "contrast_factor": 0.15,
+    "dropout": 0.3,
+    "phase1_epochs": 15,
+    "phase1_lr": 0.001,
+    "phase2_epochs": 10,
+    "phase2_lr": 1e-05,
+    "fine_tune_at": 100,
+    "early_stopping_patience": 4,
+    "reduce_lr_patience": 2,
+    "reduce_lr_factor": 0.5,
+    "class_weight_ratio_threshold": 1.5,
+    "confidence_threshold": 0.6,
+    "top_k": 3
+  },
+  "n_train": 3014,
+  "n_val": 646,
+  "class_weights_used": false,
+  "epochs_run": {
+    "phase 1 (head only)": 13,
+    "phase 2 (fine-tune)": 10
+  },
+  "minutes": 168.06
+}

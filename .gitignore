@@ -1,0 +1,29 @@
+# --- environments / IDE
+.venv/
+venv/
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- secrets (NEVER commit)
+.env
+kaggle.json
+.kaggle/
+.streamlit/secrets.toml
+
+# --- data (reproduced by scripts, too big for Git)
+data/raw/
+data/processed/
+*.zip
+
+# --- generated, not needed for deployment
+models/checkpoints/
+models/_quick_test/
+reports/_quick_test/
+
+# --- OS
+.DS_Store
+Thumbs.db

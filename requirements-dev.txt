@@ -1,0 +1,6 @@
+# Extra packages for training, evaluation and testing on your own computer.
+-r requirements.txt
+scikit-learn>=1.4
+matplotlib>=3.8
+kagglehub>=0.3
+pytest>=8.0

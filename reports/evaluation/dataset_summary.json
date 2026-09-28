@@ -1,0 +1,50 @@
+{
+  "classes": [
+    "daisy",
+    "dandelion",
+    "rose",
+    "sunflower",
+    "tulip"
+  ],
+  "total_images": 4307,
+  "per_split": {
+    "train": 3014,
+    "val": 646,
+    "test": 647
+  },
+  "per_class": {
+    "daisy": {
+      "train": 535,
+      "val": 114,
+      "test": 115
+    },
+    "dandelion": {
+      "train": 736,
+      "val": 158,
+      "test": 158
+    },
+    "rose": {
+      "train": 546,
+      "val": 117,
+      "test": 117
+    },
+    "sunflower": {
+      "train": 511,
+      "val": 110,
+      "test": 110
+    },
+    "tulip": {
+      "train": 686,
+      "val": 147,
+      "test": 147
+    }
+  },
+  "cleaning_report": {
+    "found": 4317,
+    "corrupted_or_too_small_removed": 0,
+    "conflicting_label_duplicates_removed": 8,
+    "exact_duplicates_removed": 2,
+    "kept": 4307
+  },
+  "split_method": "stratified random split, seed=42: 70% train / 15% validation / 15% test"
+}

@@ -20,7 +20,9 @@ CLASSES = ["daisy", "dandelion", "rose", "sunflower", "tulip"]
 def tiny_model(n=len(CLASSES)):
     inp = keras.Input(shape=(224, 224, 3))
     x = layers.GlobalAveragePooling2D()(inp)
-    return keras.Model(inp, layers.Dense(n, activation="softmax")(x))
+    # zero weights -> every class gets exactly 1/n probability (0.2), so the test is deterministic
+    out = layers.Dense(n, activation="softmax", kernel_initializer="zeros", bias_initializer="zeros")(x)
+    return keras.Model(inp, out)
 
 
 def test_prediction_format_and_confidence():
